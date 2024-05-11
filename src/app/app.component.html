@@ -1,0 +1,63 @@
+<section class="bg-white dark:bg-dark-300 pb-150 relative sm:overflow-hidden">
+  <div
+    class="absolute left-0 right-0 top-25 bg-[url('assets/images/service-bg.png')] bg-no-repeat bg-cover bg-center opacity-70 w-full h-full sm:hidden">
+  </div>
+  <div class="container ">
+
+    <div class="mb-12">
+      <p class="section-tagline max-lg:text-center">Felpil Devs</p>
+      <div class="block max-lg:text-center lg:flex">
+        <h2 class="max-lg:mb-5">
+          The best software programmers <br />
+          are here!!!
+        </h2>
+        <p class="max-w-[520px] mx-auto lg:ml-auto">
+          We improve and create imaginable ideas.
+        </p>
+      </div>
+    </div>
+
+    <div class="relative z-10">
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-sm:hidden">
+        <div class="w-[330px] h-[330px] xl:w-[442px] xl:h-[442px] blur-[145px] rounded-full bg-primary-200/20 "></div>
+        <div
+          class="w-[330px] h-[330px] xl:w-[442px] xl:h-[442px] blur-[145px] rounded-full bg-primary-200/25 lg:-ml-[170px]">
+        </div>
+        <div
+          class="w-[330px] h-[330px] xl:w-[442px] xl:h-[442px] blur-[145px] rounded-full bg-primary-200/20 lg-ml-[170px]">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3  max-sm:grid-cols-1 max-lg:grid-cols-2 gap-8">
+
+        @for (user of users; track user.urlGithub) {
+        <div
+          class="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-transform duration-500 hover:transition-transform hover:duration-500">
+          <div class="rounded border-gray-100 dark:border-borderColour-dark max-lg:p-5 p-10 ">
+            <img [src]="'https://github.com/' + user.avatar" alt="avatar dev"
+              class="inline-block dark:hidden mb-6" />
+            <img [src]="'https://github.com/' + user.avatar" alt="avatar dev"
+              class="hidden dark:inline-block mb-6" />
+            <a href="#" onclick="return false;" class="block">
+              <h3 class="mb-2.5">{{ user.name }} {{ user.lastName }}</h3>
+            </a>
+            <p class="mb-6">{{ user.skills ?? '' }}</p>
+            <p class="mb-6">{{ user.description ?? '' }}</p>
+            <p class="mb-6">{{at}}{{ user.userName }}</p>
+            <a [href]="'https://github.com/' + user.userName" class="btn-outline btn-sm" target="_blank">
+              <svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+              </svg>
+              View profile
+            </a>
+          </div>
+        </div>
+        }
+
+      </div>
+    </div>
+  </div>
+</section>

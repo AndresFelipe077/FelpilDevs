@@ -1,0 +1,7 @@
+section {
+  margin: 20px;
+}
+
+a:hover svg {
+  fill: white;
+}
