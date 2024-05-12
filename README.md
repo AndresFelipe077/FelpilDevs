@@ -124,6 +124,8 @@ Finally confirm your changes to be made and press the button "Create pull reques
 
 Great!!!, you just created your first contribution. 😁😁😁😁👌👌👌👌👌
 
+# Gratitude
+
 We will be verifying your changes as soon as possible.
 
 If you liked contributing, don't forget to give the little star. 🖖🖖🖖🖖 Thank you so much!!!. 🖖🖖🖖🖖
