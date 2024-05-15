@@ -7,5 +7,15 @@
     "description": "Technological young man, passionate about software, video games and exercise and with great ideas.",
     "skills": "Backend, Laravel, Nest js, Kotlin, Unity, PostgreSQL, MySQL, Angular",
     "urlGithub": "AndresFelipe077"
+  },
+  {
+    "name": "Jhon Smith ",
+    "lastName": "Meneses Meneses",
+    "avatar": "JhonDev12.png",
+    "userName": "JhonDev12",
+    "description": "Technological young man, passionate about software, video games and exercise and with great ideas.",
+    "skills": "Backend, Laravel, Nest js, Kotlin, Unity, PostgreSQL, MySQL, Angular",
+    "urlGithub": "JhonDev12"
   }
+  
 ]
